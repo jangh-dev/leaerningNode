@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.js", // 터미널 명령어로 시작할 수 있음
+    "backend": "nodemon index.js", // 서버를 껏다 다시 켤 필요없이 이걸로 실행하면 바로바로 적용이 됨
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
