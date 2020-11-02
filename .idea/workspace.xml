@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0736c563-c7b6-45b2-bf8c-e7c421e16a44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inital" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +55,7 @@
       <workItem from="1604035669059" duration="8000" />
       <workItem from="1604036008778" duration="878000" />
       <workItem from="1604073878596" duration="338000" />
+      <workItem from="1604115395747" duration="384000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1604074079861</created>
@@ -78,9 +80,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="650" y="362" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604130729177">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="650" y="362" key="#com.intellij.fileTypes.FileTypeChooser/-1680.23.1680.1027/0.23.1920.1057@0.23.1920.1057" timestamp="1604130729177" />
   </component>
 </project>

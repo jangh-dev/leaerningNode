@@ -38,7 +38,7 @@ app.get('/', (req, res) => {
 app.post('/register', (req, res) => {
     // 회원가입 할때 필요한 정보들을 client에서 가져와 데이터베이스에 넣는다
     const user = new User(req.body);
-    user.save((err, doc) => {
+    user.save((err, userInfo) => {
         if(err) return res.json({ success: false, err })
         return res.status(200).json({ //status 200은 연결 성공
             success: true
