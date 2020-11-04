@@ -1,6 +1,6 @@
 const express = require('express') // express 사용
 const app = express() // express 라이브러리
-const port = 3000 // 자신의 포트번호
+const port = 5000 // 자신의 포트번호
 const mongoose = require('mongoose') // mongodb 연결
 const bodyParser = require('body-parser'); // body-parser 가져옴 / client에서 오는 데이터를 가져옴
 const cookieParser = require('cookie-parser'); // cookie 라리브러리
@@ -38,6 +38,14 @@ mongoose.connect(config.mongoURI, {
 app.get('/', (req, res) => {
   res.send('Hello World! 노드문이 제대로 됫는지 실험 한번 해보자')
 });
+
+
+
+
+
+app.get('/api/hello', (req, res) => {
+    res.send('test!!!!!');
+})
 
 
 
