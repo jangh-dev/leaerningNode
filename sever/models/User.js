@@ -1,4 +1,4 @@
-const mongoose = require('mongoose'); // 서버 다운없이 바로바로 적용가능한 라이브러리
+const mongoose = require('mongoose'); // 서버 껏다가 다시 킬 필요없이 바로바로 적용가능한 라이브러리
 const bcrypt = require('bcrypt'); // 암호화 하는 라이브러리
 const saltRounds = 10; // 10자리인 salt를 만들고 그 salt를 이용해서 암호화 함
 const jwt = require('jsonwebtoken'); // jsonwebtoken 토큰 생성 시 필요한 라이브러리
