@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { 
     LOGIN_USER,
-    REGISTER_USER
+    REGISTER_USER,
+    AUTH_USER
 } from './types';
 
 export function loginUser(dataToSubmit) {
@@ -18,6 +19,15 @@ export function registerUser(dataToSubmit) {
     const request = axios.post('/api/users/register', dataToSubmit).then(response => response.data);
     return {
         type: REGISTER_USER,
+        payload: request
+    };
+};
+
+// get 이기때문에 body부분은 필요가 없음
+export function auth() {
+    const request = axios.get('/api/users/auth').then(response => response.data);
+    return {
+        type: AUTH_USER,
         payload: request
     };
 };

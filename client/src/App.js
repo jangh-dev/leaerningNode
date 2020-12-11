@@ -8,12 +8,14 @@ import {
 import LandingPage from './components/views/LandingPage/LandingPage';
 import LoginPage from './components/views/LoginPage/LoginPage';
 import RegisterPage from './components/views/RegisterPage/RegisterPage';
+// hoc를 사용하여 auth 연결
+import Auth from './hoc/auth';
 
 function App() {
   return (
     <Router>
       <div>
-        {/*
+        {/* 
           A <Switch> looks through all its children <Route>
           elements and renders the first one whose path
           matches the current URL. Use a <Switch> any time
@@ -21,9 +23,9 @@ function App() {
           of them to render at a time
         */}
         <Switch>
-          <Route exact path="/" component={ LandingPage } />
-          <Route exact path="/login" component={ LoginPage } />
-          <Route exact path="/register" component={ RegisterPage } />
+          <Route exact path="/" component={Auth( LandingPage, null )} />
+          <Route exact path="/login" component={Auth( LoginPage, false )} />
+          <Route exact path="/register" component={Auth( RegisterPage, false )} />
         </Switch>
       </div>
     </Router>
